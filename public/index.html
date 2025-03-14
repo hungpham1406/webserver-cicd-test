@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Air Temperature Panel -->
+    <div class="panel temperature">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+        </svg>
+      </div>
+      <div class="data">+25°C</div>
+      <div class="label">Air Temp</div>
+      <div class="status">Good</div>
+    </div>
+    <!-- Water Level Panel -->
+    <div class="panel water-level">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.32 0L12 2.69z"/>
+        </svg>
+      </div>
+      <div class="data">75%</div>
+      <div class="label">Water Level</div>
+      <div class="status">Good</div>
+    </div>
+    <!-- Nutrient Levels Panel -->
+    <div class="panel nutrients">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 8C8 10 5.9 16.17 3.82 21.34l5.64-5.64C12.46 17.4 16 17.3 17 8z"/>
+        </svg>
+      </div>
+      <div class="data">
+        <div>K: 80 PPM</div>
+        <div>N: 80 PPM</div>
+      </div>
+      <div class="label">Nutrient Levels</div>
+      <div class="status">Good</div>
+    </div>
+  </div>
+</body>
+</html>
