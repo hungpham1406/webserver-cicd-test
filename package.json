@@ -20,5 +20,9 @@
   "homepage": "https://github.com/hungpham1406/webserver-cicd-test#readme",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0"
   }
 }
