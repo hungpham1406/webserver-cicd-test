@@ -25,10 +25,10 @@ jobs:
     runs-on: self-hosted # Runs on your cm4stack
     steps:
       - name: Change to webserver directory
-        run: cd /home/pi/webserver # Adjust to your project directory
+        run: cd /home/pi/CICD/webserver-cicd-test # Adjust to your project directory
       - name: Pull latest code
-        run: git pull origin main
+        run: git pull origin Coding
       - name: Install dependencies
         run: npm install
-      - name: Restart web server
-        run: sudo systemctl restart webserver
+      - name: Start web server
+        run: sudo node server.js
