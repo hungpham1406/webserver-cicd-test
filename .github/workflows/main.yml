@@ -28,13 +28,15 @@ jobs:
     needs: test # Only runs if tests pass
     runs-on: self-hosted # Runs on your cm4stack
     steps:
-      - name: Change to webserver directory
-        run: cd /home/pi/CICD/webserver-cicd-test # Adjust to your project directory
-      - name: Switch to Coding branch
-        run: git checkout Coding
-      - name: Pull latest code
-        run: git pull origin Coding
-      - name: Install dependencies
-        run: npm install
-      - name: Start web server
-        run: sudo node server.js
+    #   - name: Change to webserver directory
+    #     run: cd /home/pi/CICD/webserver-cicd-test # Adjust to your project directory
+    #   - name: Switch to Coding branch
+    #     run: git checkout Coding
+    #   - name: Pull latest code
+    #     run: git pull origin Coding 
+    #   - name: Install dependencies
+    #     run: npm install
+    #   - name: Start web server
+    #     run: sudo node server.js
+      - name: Check working directory
+        run: pwd
