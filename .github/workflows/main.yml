@@ -19,6 +19,8 @@ jobs:
         run: npm install
       - name: List node_modules
         run: ls -la node_modules/.bin/
+      - name: Fix permissions of node_modules/.bin
+        run: sudo chmod +x node_modules/.bin/*
       - name: Run tests
         run: npm test
 
