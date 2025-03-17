@@ -17,6 +17,8 @@ jobs:
           node-version: '20' # Adjust to your Node.js version
       - name: Install dependencies
         run: npm install
+      - name: List node_modules
+        run: ls -la node_modules/.bin/
       - name: Run tests
         run: npm test
 
